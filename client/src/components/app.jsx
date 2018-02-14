@@ -5,6 +5,7 @@ import Main from './Main';
 import BlogInput from './BlogInput';
 import ContactPage from './ContactPage';
 import SingleBlog from './SingleBlog';
+import EditBlog from './EditBlog';
 
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
                         <Route exact path="/BlogInput" component={BlogInput} />
                         <Route exact path="/ContactPage" component={ContactPage} />
                         <Route exact path="/SingleBlog/:id" component={SingleBlog} />
+                        <Route exact path="/EditBlog/:id" component={EditBlog} />
                     </Switch>
                 </Fragment>
             </Router>

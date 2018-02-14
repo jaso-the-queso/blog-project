@@ -34,4 +34,24 @@ router.post('/', (req, res) => {
     })
 })
 
+router.delete('/:id', (req, res) => {
+    table.delete(req.params.id)
+    .then((data) => {
+        res.send(data);
+    })
+    .catch((err) => {
+        console.log(err)
+    })
+})
+
+router.put('/:id', (req, res) => {
+    table.update(req.params.id, req.body)
+    .then((data) => {
+        res.send(data);
+    })
+    .catch((err) => {
+        console.log(err)
+    })
+})
+
 export default router;

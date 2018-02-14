@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-// import b from "../pics/b.png";
 import Navbar from "./Navbar";
 
 
@@ -65,9 +64,12 @@ class BlogInput extends Component {
               id="exampleFormControlTextarea2"
               rows="11"
             />
-            <button className="btn btn-outline-success my-2 my-sm-0">
+            <Link 
+            to="/Main"
+            onClick={() => {this.createBlog()}}
+            className="btn btn-outline-success my-2 my-sm-0">
               Post
-            </button>
+            </Link>
           </div>
         </div>
       </React.Fragment>

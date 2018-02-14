@@ -1,8 +1,0 @@
-.jumbotron.main {
-    background-image: url(src/pics/b.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50em;
-    display: flex;
-    align-items: flex-end;
-}
