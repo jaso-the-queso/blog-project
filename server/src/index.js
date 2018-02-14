@@ -2,11 +2,14 @@ import { join } from 'path';
 import express from 'express';
 import routes from './routes';
 import stateRouting from './middleware/routing.mw';
+import cors from 'cors';
+
 
 const CLIENT_PATH = join(__dirname, '../../client');
 
 let app = express();
 
+app.use(cors());
 app.use(express.static(CLIENT_PATH));
 app.use(express.json());
 
