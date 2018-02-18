@@ -33,7 +33,7 @@ class BlogInput extends Component {
       headers: new Headers({"Content-Type": "application/json"}) 
       })
       .then((res) => {
-        return res.json()
+        console.log(res);
       })
       .then((body) => {
         console.log(body)
